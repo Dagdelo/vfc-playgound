@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "vue-facing-decorator": "^2.1.20"
+    "vue-facing-decorator": "^2.1.20",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
