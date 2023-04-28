@@ -3,6 +3,8 @@
   <input v-model="text">
   <Foo @click="callMethodFromOutside()" ref="fooComp"/>
   <Baz />
+  <!-- .tsx component following the vue-facing-decorator does not render | Uncaught TypeError: Class constructor Bar cannot be invoked without 'new' -->
+  <Bar />
 </template>
 
 <script lang="ts">
@@ -10,12 +12,14 @@ import { Component, Ref, Vue } from "vue-facing-decorator";
 
 import Foo from './Foo.vue'
 import Baz from './Baz'
+import Bar from './tsxBar/Bar'
 // import { mapState, mapMutations } from 'vuex'
 
 @Component({
   'components': {
     Foo,
     Baz,
+    Bar
   }
 })
 export default class HelloWorld extends Vue {

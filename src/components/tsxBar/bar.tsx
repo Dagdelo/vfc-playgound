@@ -1,9 +1,7 @@
-//Comp.render.tsx
-import type BarComponent from './bar'
-import Style from './style.css'
+//Bar.tsx
 
-export default function render(this: BarComponent) {
-    return <div class={Style.root} onClick={this.onClick}>
-        {this.counter}
-    </div>
+import Bar from './Bar'
+
+export default function render(this: Bar) {
+    return <div>From TSX!</div>
 }
