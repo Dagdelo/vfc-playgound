@@ -2,17 +2,20 @@
   <div @click="count = 2">Count: {{ count }}</div>
   <input v-model="text">
   <Foo @click="callMethodFromOutside()" ref="fooComp"/>
+  <Baz />
 </template>
 
 <script lang="ts">
 import { Component, Ref, Vue } from "vue-facing-decorator";
 
 import Foo from './Foo.vue'
+import Baz from './Baz'
 // import { mapState, mapMutations } from 'vuex'
 
 @Component({
   'components': {
-    Foo
+    Foo,
+    Baz,
   }
 })
 export default class HelloWorld extends Vue {
