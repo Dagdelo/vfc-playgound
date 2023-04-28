@@ -12,7 +12,7 @@ import { Component, Ref, Vue } from "vue-facing-decorator";
 
 import Foo from './Foo.vue'
 import Baz from './Baz'
-import Bar from './tsxBar/Bar'
+import Bar from './tsxBar/Bar.component'
 // import { mapState, mapMutations } from 'vuex'
 
 @Component({
